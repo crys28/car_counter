@@ -1,0 +1,65 @@
+*{
+	margin: 0;
+}
+
+body{
+ background-color: #343a40;
+ color: white;
+}
+
+.mainFrame{
+	height: 150vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.divFrame{
+	height: 210px;
+    width: 180px;
+	border: 1px solid black;
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+.divFrame button{
+	font-size: 1.2rem;
+}
+
+.results{
+	height: 200px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around; 
+}
+
+.results span{
+	font-size: 1.8rem ;
+}
+
+.results a{
+	font-size: 1.2rem ;
+	margin-bottom: 20%;
+}
+
+.result_digits{
+	color: red;
+}
+
+.divInput{
+	margin-top: 15%; 
+	display: flex;
+		flex-direction: column; 
+		font-size: 1.5rem; 
+	align-items: center;
+}
+
+.divInput select{
+	width: 150px;
+	font-size: 1.2rem;
+		text-align: center;
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Car Counter</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>	
+	<div class="mainFrame">
+		<div class="divInput">
+			<label for="intersec">Intersectia de tip:</label>
+			<select onclick="changeSense()" id="senseVal" name="intersec">
+					<option>3 sensuri</option>
+					<option>4 sensuri</option>
+				</select>
+			<br><br>
+			<label for="ora">Ora:</label>
+			<select name="ora">
+					<option>07:00-09:00</option>
+					<option>09:00-11:00</option>
+					<option>11:00-13:00</option>
+					<option>13:00-15:00</option>
+					<option>15:00-17:00</option>
+				</select>
+			<br><br>
+			<label for="dir">Directia:</label>
+			<select onclick="remDiv()" id="selectVal" name="dir">
+					<option>A</option>
+					<option>B</option>
+					<option>C</option>
+					<option>D</option>
+				</select>
+			<br><br>
+		</div>
+		<div style="display: flex; flex-direction: row">
+			<div id="divA" class="divFrame">
+				<label for="directions">directia A:</label>
+				<!-- <select name="directions">
+					<option>A</option>
+					<option>B</option>
+					<option>C</option>
+					<option>D</option>
+				</select> -->
+
+				<div>
+					<br>
+					<button onclick="mic()"><img width="50" height="50" src="img/car.png"></button>
+					<button onclick="mar()"><img width="50" height="50" src="img/big-truck.png"></button>
+					<br>
+					<button onclick="micro()"><img width="50" height="50" src="img/bus.png"></button>
+					<button onclick="bic()"><img width="50" height="50" src="img/bicycle.png"></button>
+				</div>
+			</div>
+			<div id="divB" class="divFrame">
+				<label for="directions">directia B:</label>
+				<!-- <select name="directions">
+					<option>A</option>
+					<option>B</option>
+					<option>C</option>
+					<option>D</option>
+				</select> -->
+
+				<div>
+					<br>
+					<button onclick="micB()"><img width="50" height="50" src="img/car.png"></button>
+					<button onclick="marB()"><img width="50" height="50" src="img/big-truck.png"></button>
+					<br>
+					<button onclick="microB()"><img width="50" height="50" src="img/bus.png"></button>
+					<button onclick="bicB()"><img width="50" height="50" src="img/bicycle.png"></button>
+				</div>
+			</div>
+		</div>
+		<div style="display: flex; flex-direction: row;">
+			<div id="divC" class="divFrame">
+				<label for="directions">directia C:</label>
+				<!-- <select name="directions">
+					<option>A</option>
+					<option>B</option>
+					<option>C</option>
+					<option>D</option>
+				</select> -->
+
+				<div>
+					<br>
+					<button onclick="micC()"><img width="50" height="50" src="img/car.png">  </button>
+					<button onclick="marC()"><img width="50" height="50" src="img/big-truck.png"></button>
+					<br>
+					<button onclick="microC()"><img width="50" height="50" src="img/bus.png"> </button>
+					<button onclick="bicC()"><img width="50" height="50" src="img/bicycle.png"></button>
+				</div>
+			</div>
+			<div id="divD" class="divFrame">
+				<label for="directions">directia D:</label>
+				<!-- <select name="directions">
+					<option>A</option>
+					<option>B</option>
+					<option>C</option>
+					<option>D</option>
+				</select> -->
+
+				<div>
+					<br>
+					<button onclick="micD()"><img width="50" height="50" src="img/car.png">  </button>
+					<button onclick="marD()"><img width="50" height="50" src="img/big-truck.png"></button>
+					<br>
+					<button onclick="microD()"><img width="50" height="50" src="img/bus.png"> </button>
+					<button onclick="bicD()"><img width="50" height="50" src="img/bicycle.png"></button>
+				</div>
+			</div>
+		</div>
+
+		<div class="results">
+			<div id="rezA">
+			<span>A:</span>
+			<a>Mici: <a class="result_digits" id="mici" /></a>
+			<a>Mari: <a class="result_digits" id="mari" /></a>
+			<a>Microbuze: <a class="result_digits" id="microbuze" /></a>
+			<a>Biciclete: <a class="result_digits" id="biciclete" /></a>
+			</div>
+
+			<div id="rezB">
+			<span>B:</span>
+			<a>Mici: <a class="result_digits" id="miciB" /></a>
+			<a>Mari: <a class="result_digits" id="mariB" /></a>
+			<a>Microbuze: <a class="result_digits" id="microbuzeB" /></a>
+			<a>Biciclete: <a class="result_digits" id="bicicleteB" /></a>
+			</div>
+			
+			<div id="rezC">
+			<span>C:</span>
+			<a>Mici: <a class="result_digits" id="miciC" /></a>
+			<a>Mari: <a class="result_digits" id="mariC" /></a>
+			<a>Microbuze: <a class="result_digits" id="microbuzeC" /></a>
+			<a>Biciclete: <a class="result_digits" id="bicicleteC" /></a>
+			</div>
+			
+			<div id="rezD">
+			<span>D:</span>
+			<a>Mici: <a class="result_digits" id="miciD" /></a>
+			<a>Mari: <a class="result_digits" id="mariD" /></a>
+			<a>Microbuze: <a class="result_digits" id="microbuzeD" /></a>
+			<a>Biciclete: <a class="result_digits" id="bicicleteD" /></a>
+			</div>
+
+		</div>
+	</div>
+
+	<script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
